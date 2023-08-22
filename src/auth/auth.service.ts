@@ -14,7 +14,7 @@ export class AuthService {
     const user = new User();
     user.name = name;
     user.email = email;
-    user.password = password; // We need to hash password before saving in real app
+    user.password = password; // We need to hash password before saving in real application
     return this.userRepository.save(user);
   }
 
